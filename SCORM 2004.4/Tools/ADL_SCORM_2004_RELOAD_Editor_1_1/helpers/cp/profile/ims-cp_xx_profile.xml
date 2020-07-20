@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Content Packaging Profile -->
+<!-- This is an example profile that can be edited to point to alternative helper and vocab files -->
+<profile name="IMS 1.1 Alt" vocabfile="imscp_en_vocab.xml" schemahelperfile="imscp_en_helper.xml">
+
+
+</profile>

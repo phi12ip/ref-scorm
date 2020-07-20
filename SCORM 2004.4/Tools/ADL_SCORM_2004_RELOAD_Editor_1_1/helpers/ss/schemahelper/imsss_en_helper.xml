@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Schema Helper File v1.2 -->
+<schemahelper schema="IMS Simple Sequencing">
+
+<!-- Attributes -->
+<element path="@identifier" fname="Identifier">
+      	<tip>An identifier that is unique within the Manifest.</tip>
+</element>
+
+<!-- Attribute Values -->
+<element path="sequencingRule/#skip" fname="Skip me"/>
+<element path="sequencingRule/#disabled" fname="Disable me"/>
+<element path="sequencingRule/#hiddenFromChoice" fname="Hide me from choice"/>
+<element path="sequencingRule/#stopForwardTraversal" fname="Stop forward traversal"/>
+<element path="sequencingRule/#exit" fname="Exit me after a descendant exits,"/>
+<element path="sequencingRule/#exitParent" fname="Exit my parent"/>
+<element path="sequencingRule/#exitAll" fname="Exit all"/>
+<element path="sequencingRule/#retry" fname="Retry me" />
+<element path="sequencingRule/#retryAll" fname="Retry all"/>
+<element path="sequencingRule/#continue" fname="Continue to next activity"/>
+<element path="sequencingRule/#previous" fname="Go to previous activity"/>
+<element path="sequencingRule/#noOp" fname="true"/>
+<element path="sequencingRule/#not" fname="false"/>
+<element path="sequencingRule/#satisfied" fname="referenced objective is satisfied"/>
+<element path="sequencingRule/#objectiveStatusKnown" fname="referenced objective's status is known"/>
+<element path="sequencingRule/#objectiveMeasureKnown" fname="referenced objective's measure is known"/>
+<element path="sequencingRule/#objectiveMeasureGreaterThan" fname="referenced objective's measure is greater than the following measure threshold"/>
+<element path="sequencingRule/#objectiveMeasureLessThan" fname="referenced objective's measure is less than the following measure threshold"/> 
+<element path="sequencingRule/#completed" fname="I am completed"/>
+<element path="sequencingRule/#activityProgressKnown" fname="my activity progress is known"/>
+<element path="sequencingRule/#attempted" fname="I have been attempted"/>
+<element path="sequencingRule/#attemptLimitExceeded" fname="I have attempt limitations and the number of allowable attempts has been exceeded"/>  
+<element path="sequencingRule/#timeLimitExceeded" fname="I have time limitations and my time limit has been exceeded"/>
+<element path="sequencingRule/#outsideAvailableTimeRange" fname="there is an end-time limitation on me and it is past that time"/>
+<element path="sequencingRule/#always" fname="always evaluate to true"/> 
+<element path="sequencingRule/#not_satisfied" fname="referenced objective is NOT satisfied"/>
+<element path="sequencingRule/#not_objectiveStatusKnown" fname="referenced objective's status is NOT known"/>
+<element path="sequencingRule/#not_objectiveMeasureKnown" fname="referenced objective's measure is NOT known"/>
+<element path="sequencingRule/#not_objectiveMeasureGreaterThan" fname="referenced objective's measure is NOT greater than the following measure threshold"/>
+<element path="sequencingRule/#not_objectiveMeasureLessThan" fname="referenced objective's measure is NOT less than the following measure threshold"/> 
+<element path="sequencingRule/#not_completed" fname="I am NOT complete"/>
+<element path="sequencingRule/#not_activityProgressKnown" fname="my activity progress is NOT known"/>
+<element path="sequencingRule/#not_attempted" fname="I have NOT been attempted"/>
+<element path="sequencingRule/#not_attemptLimitExceeded" fname="I have attempt limitations and the number of allowable attempts has NOT been exceeded"/>  
+<element path="sequencingRule/#not_timeLimitExceeded" fname="I have time limitations and my time limit has NOT been exceeded"/>
+<element path="sequencingRule/#not_outsideAvailableTimeRange" fname="there is an end-time limitation on me and it is NOT past that time"/>
+<element path="sequencingRule/#not_always" fname="never evaluate to true"/> 
+<element path="rollupRule/#satisfied" fname="satisfied"/>
+<element path="rollupRule/#objectiveStatusKnown" fname="objective status is known"/>
+<element path="rollupRule/#objectiveMeasureKnown" fname="objective measure is known"/>
+<element path="rollupRule/#completed" fname="completed"/>
+<element path="rollupRule/#activityProgressKnown" fname="activity progress is known"/>
+<element path="rollupRule/#attempted" fname="attempted"/>
+<element path="rollupRule/#attemptLimitExceeded" fname="attempt limit is exceeded"/>
+<element path="rollupRule/#timeLimitExceeded" fname="time limit is exceeded"/>
+<element path="rollupRule/#outsideAvailableTimeRange" fname="it is outside available time range"/>
+<element path="rollupRule/#notSatisfied" fname="NOT satisfied"/>
+<element path="rollupRule/#not_satisfied" fname="NOT satisfied"/>
+<element path="rollupRule/#not_objectiveStatusKnown" fname="objective status is NOT known"/>
+<element path="rollupRule/#not_objectiveMeasureKnown" fname="objective measure is NOT known"/>
+<element path="rollupRule/#not_completed" fname="NOT completed"/>
+<element path="rollupRule/#not_activityProgressKnown" fname="activity progress is NOT known"/>
+<element path="rollupRule/#not_attempted" fname="NOT attempted"/>
+<element path="rollupRule/#not_attemptLimitExceeded" fname="attempt limit is NOT exceeded"/>
+<element path="rollupRule/#not_timeLimitExceeded" fname="time limit is NOT exceeded"/>
+<element path="rollupRule/#not_outsideAvailableTimeRange" fname="it is NOT outside available time range"/>
+<element path="rollupRule/#not_always" fname="never"/>
+<element path="Skip me" fname="skip"/>
+<element path="complete" fname="completed"/>
+<element path="Disable me" fname="disabled"/>
+<element path="Hide me from choice" fname="hiddenFromChoice"/>
+<element path="Stop forward traversal" fname="stopForwardTraversal"/>
+<element path="Exit me after a descendant exits," fname="exit"/>
+<element path="Exit my parent" fname="exitParent"/>
+<element path="Exit all" fname="exitAll"/>
+<element path="Retry me" fname="retry"/>
+<element path="Retry all" fname="retryAll"/>
+<element path="Continue to next activity" fname="continue"/>
+<element path="Go to previous activity" fname="previous"/>
+<element path="true" fname="noOp"/>
+<element path="false" fname="not"/>
+<element path="condition/#referenced objective is satisfied" fname="satisfied"/>
+<element path="condition/#referenced objective's status is known" fname="objectiveStatusKnown"/>
+<element path="condition/#referenced objective's measure is known" fname="objectiveMeasureKnown"/>
+<element path="condition/#referenced objective's measure is greater than the following measure threshold" fname="objectiveMeasureGreaterThan"/>
+<element path="condition/#referenced objective's measure is less than the following measure threshold" fname="objectiveMeasureLessThan"/> 
+<element path="condition/#I am completed" fname="completed"/>
+<element path="condition/#my activity progress is known" fname="activityProgressKnown"/>
+<element path="condition/#I have been attempted" fname="attempted"/>
+<element path="condition/#I have attempt limitations and the number of allowable attempts has been exceeded" fname="attemptLimitExceeded"/>  
+<element path="condition/#I have time limitations and my time limit has been exceeded" fname="timeLimitExceeded"/>
+<element path="condition/#there is an end-time limitation on me and it is past that time" fname="outsideAvailableTimeRange"/>
+<element path="condition/#always evaluate to true" fname="always"/> 
+<element path="condition/#satisfied" fname="satisfied"/>
+<element path="condition/#objective status is known" fname="objectiveStatusKnown"/>
+<element path="condition/#objective measure is known"  fname="objectiveMeasureKnown"/>
+<element path="condition/#completed" fname="completed"/>
+<element path="condition/#complete" fname="completed"/>
+<element path="condition/#activity progress is known" fname="activityProgressKnown"/>
+<element path="condition/#attempted" fname="attempted"/>
+<element path="condition/#attempt limit is exceeded" fname="attemptLimitExceeded"/>
+<element path="condition/#time limit is exceeded" fname="timeLimitExceeded"/>
+<element path="condition/#it is outside available time range" fname="outsideAvailableTimeRange"/>
+<element path="not satisfied" fname="notSatisfied"/>
+<element path="Read Satisfied Status" fname="readSatisfiedStatus"/>
+<element path="Read Normalized Measure" fname="readNormalizedMeasure"/>
+<element path="Write Satisfied Status" fname="writeSatisfiedStatus"/>
+<element path="Write Normalized Measure" fname="writeNormalizedMeasure"/>
+<element path="condition/#referenced objective is NOT satisfied" fname="not_satisfied"/>
+<element path="condition/#referenced objective's status is NOT known" fname="not_objectiveStatusKnown"/>
+<element path="condition/#referenced objective's measure is NOT known" fname="not_objectiveMeasureKnown" />
+<element path="condition/#referenced objective's measure is NOT greater than the following measure threshold" fname="not_objectiveMeasureGreaterThan"/>
+<element path="condition/#referenced objective's measure is NOT less than the following measure threshold" fname="not_objectiveMeasureLessThan"/> 
+<element path="condition/#I am NOT complete" fname="not_completed"/>
+<element path="condition/#my activity progress is NOT known" fname="not_activityProgressKnown"/>
+<element path="condition/#I have NOT been attempted" fname="not_attempted"/>
+<element path="condition/#I have attempt limitations and the number of allowable attempts has NOT been exceeded" fname="not_attemptLimitExceeded"/>  
+<element path="condition/#I have time limitations and my time limit has NOT been exceeded" fname="not_timeLimitExceeded"/>
+<element path="condition/#there is an end-time limitation on me and it is NOT past that time" fname="not_outsideAvailableTimeRange" />
+<element path="condition/#never evaluate to true" fname="not_always"/> 
+<element path="Not satisfied" fname="notSatisfied"/>
+<element path="condition/#NOT satisfied" fname="not_satisfied"/>
+<element path="condition/#objective status is NOT known" fname="not_objectiveStatusKnown"/>
+<element path="condition/#objective measure is NOT known" fname="not_objectiveMeasureKnown"/>
+<element path="condition/#NOT completed" fname="not_completed"/>
+<element path="condition/#activity progress is NOT known" fname="not_activityProgressKnown"/>
+<element path="condition/#NOT attempted" fname="not_attempted"/>
+<element path="condition/#attempt limit is NOT exceeded" fname="not_attemptLimitExceeded"/>
+<element path="condition/#time limit is NOT exceeded" fname="not_timeLimitExceeded"/>
+<element path="condition/#it is NOT outside available time range" fname="not_outsideAvailableTimeRange"/>
+<element path="condition/#never" fname="not_always"/>
+</schemahelper>

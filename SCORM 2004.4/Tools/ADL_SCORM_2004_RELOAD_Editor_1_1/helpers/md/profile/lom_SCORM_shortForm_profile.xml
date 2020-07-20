@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Metadata Profile -->
+<!-- This is the default Profile - it is not complete! -->
+<profile name="lom" vocabfile="lom_en_vocab.xml" schemahelperfile="lom_en_helper.xml">
+
+  <group name="General">
+    <group name="Identifier">
+      <element name="Globally Unique Identifier" path="lom/general/identifier/entry"/>
+    </group>
+    <element name="Title" path="lom/general/title/string"/>
+    <!-- <element name="Language" path="lom/general/language"/> -->
+    <element name="Description" path="lom/general/description/string"/>
+    <element name="Keywords (separated by semicolon)" path="lom/general/keyword/string"/>
+  </group>
+
+  <group name="Life Cycle">
+    <element name="Version" path="lom/lifeCycle/version/string"/>
+    <group name="Status">
+      <element name="Source" path="lom/lifeCycle/status/source"/>
+      <element name="Value" path="lom/lifeCycle/status/value"/>
+    </group>
+    <group name="Contribute">
+       <group name="Role">
+          <element name="Source" path="lom/lifeCycle/contribute/role/source"/>
+          <element name="Value" path="lom/lifeCycle/contribute/role/value"/>
+       </group>
+       <element name="Entity" path="lom/lifeCycle/contribute/entity" /> 	
+       <group name="Date">
+       	   <element name="Date Time" path="lom/lifeCycle/contribute/date/dateTime" />
+       	   <element name="Description" path="lom/lifeCycle/contribute/date/description/string" />        
+       </group>
+    </group>
+   </group>
+
+  <group name="Meta-metadata">
+    <group name="Identifier">
+	<element name="Globally Unique Identifier" path="lom/metaMetadata/identifier/entry"/>
+    </group>
+    <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema1"/>
+    <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema2"/>
+    <!-- <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema"/>  -->
+    <element name="Language" path="lom/metaMetadata/language"/> 
+  </group>
+	
+  <group name="Technical">
+    <element name="Format" path="lom/technical/format"/>
+  </group>
+
+  <group name="Rights">
+	<group name="Cost">
+	    <element name="Source" path="lom/rights/cost/source"/>
+	    <element name="Value" path="lom/rights/cost/value"/>
+	</group>
+	<group name="Copyright and Other Restrictions">
+	    <element name="Source" path="lom/rights/copyrightAndOtherRestrictions/source"/>
+	    <element name="Value" path="lom/rights/copyrightAndOtherRestrictions/value"/>
+	</group>
+  </group>
+	 
+  
+</profile>

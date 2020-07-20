@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Content Packaging Profile -->
+<!-- This is the default Profile - do not edit or delete! -->
+<profile name="IMS 1.1" vocabfile="imscp_en_vocab.xml" schemahelperfile="imscp_en_helper.xml">
+
+
+</profile>

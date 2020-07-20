@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Schema Vocabulary Helper File v1.0 -->
+<vocab name="IMS-LRM" lang="en">
+
+  <!-- Paths take order of precedence. Therefore the ordering of this list is important -->
+  <!-- Paths nearer the start of the list take precedence; start with the longest path and end with the shortest path -->
+  <!-- For example, "source/langstring@xml:lang" will resolve before "langstring@xml:lang" -->
+
+<!-- For testing purposes, add list for title. Acccompanying vocab list is below. -->
+    <element path="lom/general/title/string" list="titleValues"/>
+
+<!-- The element mappings to lists -->
+
+    <element path="lom/general/structure/value" list="structureValues"/>
+    <element path="lom/general/aggregationLevel/value" list="aggregationLevelValues"/>
+
+<!-- **************2.0 Life Cycle***************** -->
+    <element path="lom/lifeCycle/version"/>
+    <element path="lom/lifeCycle/status/value" list="statusValues"/>
+    <element path="lom/lifeCycle/contribute/role/value" list="roleValues"/>
+
+<!-- ***************3.0 Meta-metadata************** -->
+    <element path="lom/metaMetadata/contribute/role/value" list="roleMetaValues"/>
+    <element path="lom/metaMetadata/metadataSchema1" list="sourceValues"/>
+    <element path="lom/metaMetadata/metadataSchema2" list="scormValues"/>
+    <element path="lom/metaMetadata/language" list="lang"/> 
+
+<!-- ***************4.0 Technical****************** -->
+    <element path="lom/technical/format"/>
+    <element path="lom/technical/size"/>
+    <element path="lom/technical/location"/>
+    <element path="lom/technical/requirement/orComposite/type/value" list="typeValues"/>
+    <element path="lom/technical/requirement/orComposite/name/value" list="nameValues"/>
+
+<!-- ***************5.0 Educational *************** -->
+    <element path="lom/educational/interactivityType/value" list="interactivityTypeValues"/>
+    <element path="lom/educational/learningResourceType/value" list="learningResourceTypeValues"/>
+    <element path="lom/educational/interactivityLevel/value" list="interactivityLevelValues"/>
+    <element path="lom/educational/semanticDensity/value" list="semanticDensityValues"/>
+    <element path="lom/educational/intendedEndUserRole/value" list="intendedEndUserRoleValues"/>
+    <element path="lom/educational/context/value" list="contextValues"/>
+    <element path="lom/educational/difficulty/value" list="difficultyValues"/>
+    <element path="lom/educational/language" list="lang"/>
+
+<!-- ****************6.0 Rights******************** -->
+    <element path="lom/rights/cost/value" list="costValues"/>
+    <element path="lom/rights/copyrightAndOtherRestrictions/value" list="copyrightAndOtherRestrictionsValues"/>
+
+<!-- ****************7.0 Relation****************** -->
+    <element path="lom/relation/kind/value" list="kindValues"/>
+
+<!-- ****************8.0 Classification************ -->
+    <element path="lom/classification/purpose/value" list="purposeValues"/>
+
+    <element path="language" list="lang"/>
+    <element path="source" list="lom_v10"/>
+ 
+<!-- Title -->
+   <vocabList name="titleValues">
+         <item default="true">Title Test</item>
+      
+   </vocabList>
+
+<!-- Source -->
+   <vocabList name="lom_v10"><item></item>
+         <item>LOMv1.0</item>
+      
+   </vocabList>
+
+   <!-- Source -->
+   <vocabList name="sourceValues">
+         <item>LOMv1.0</item>
+      
+   </vocabList>
+
+   <vocabList name="scormValues">
+      
+         <item>SCORM_CAM_v1.3</item>
+      
+   </vocabList>
+
+   <!-- 1.7 Structure -->
+   <vocabList name="structureValues"><item></item>
+      
+         <item>atomic</item>
+         <item>collection</item>
+         <item>networked</item>
+         <item>hierarchical</item>
+         <item>linear</item>
+      
+   </vocabList>
+
+   <!-- 1.8 Aggregation Level -->
+   <vocabList name="aggregationLevelValues"><item></item>
+      
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+         <item>4</item>
+      
+   </vocabList>
+
+   <!-- 2.2 Status -->
+   <vocabList name="statusValues"><item></item>
+      
+         <item>draft</item>
+         <item>final</item>
+         <item>revised</item>
+         <item>unavailable</item>
+      
+   </vocabList>
+
+   <!-- 2.3.1 Role -->
+   <vocabList name="roleValues"><item></item>
+      
+         <item>author</item>
+         <item>publisher</item>
+         <item>unknown</item>
+         <item>initiator</item>
+         <item>terminator</item>
+         <item>validator</item>
+         <item>editor</item>
+         <item>graphical designer</item>
+         <item>technical implementer</item>
+         <item>content provider</item>
+         <item>technical validator</item>
+         <item>educational validator</item>
+         <item>script writer</item>
+         <item>instructional designer</item>
+         <item>subject matter expert</item>
+      
+   </vocabList>
+
+   <!-- 3.2.1 Role -->
+   <vocabList name="roleMetaValues"><item></item>
+      
+         <item>creator</item>
+         <item>validator</item>
+      
+   </vocabList>
+
+   <!-- 4.4.1.1 Type -->
+   <vocabList name="typeValues"><item></item>
+      
+         <item>operating system</item>
+         <item>browser</item>
+      
+   </vocabList>
+
+   <!-- 4.4.1.2 Name -->
+   <vocabList name="nameValues"><item></item>
+      
+         <item>pc-dos</item>
+         <item>ms-windows</item>
+         <item>macos</item>
+         <item>unix</item>
+         <item>multi-os</item>
+         <item>none</item>
+         <item>any</item>
+         <item>netscape communicator</item>
+         <item>ms-internet explorer</item>
+         <item>opera</item>
+         <item>amaya</item>
+      
+   </vocabList>
+
+   <!-- 5.1 Interactivity Type -->
+   <vocabList name="interactivityTypeValues"><item></item>
+      
+         <item>active</item>
+         <item>expositive</item>
+         <item>mixed</item>
+      
+   </vocabList>
+
+   <!-- 5.2 Learning Resource Type -->
+   <vocabList name="learningResourceTypeValues"><item></item>
+      
+         <item>exercise</item>
+         <item>simulation</item>
+         <item>questionnaire</item>
+         <item>diagram</item>
+         <item>figure</item>
+         <item>graph</item>
+         <item>index</item>
+         <item>slide</item>
+         <item>table</item>
+         <item>narrative text</item>
+         <item>exam</item>
+         <item>experiment</item>
+         <item>problem statement</item>
+         <item>self assessment</item>
+         <item>lecture</item>
+      
+   </vocabList>
+
+   <!-- 5.3 Interactivity Level -->
+   <vocabList name="interactivityLevelValues"><item></item>
+      
+         <item>very low</item>
+         <item>low</item>
+         <item>medium</item>
+         <item>high</item>
+         <item>very high</item>
+      
+   </vocabList>
+
+   <!-- 5.4 Semantic Density -->
+   <vocabList name="semanticDensityValues"><item></item>
+      
+         <item>very low</item>
+         <item>low</item>
+         <item>medium</item>
+         <item>high</item>
+         <item>very high</item>
+      
+   </vocabList>
+
+   <!-- 5.5 Intended End User Role -->
+   <vocabList name="intendedEndUserRoleValues"><item></item>
+      
+         <item>teacher</item>
+         <item>author</item>
+         <item>learner</item>
+         <item>manager</item>
+      
+   </vocabList>
+
+   <!-- 5.6 Context -->
+   <vocabList name="contextValues"><item></item>
+      
+         <item>school</item>
+         <item>higher education</item>
+         <item>training</item>
+         <item>other</item>
+      
+   </vocabList>
+
+   <!-- 5.8 Difficulty -->
+   <vocabList name="difficultyValues"><item></item>
+      
+         <item>very easy</item>
+         <item>easy</item>
+         <item>medium</item>
+         <item>difficult</item>
+         <item>very difficult</item>
+      
+   </vocabList>
+
+   <!-- 6.1 Cost -->
+   <vocabList name="costValues"><item></item>
+      
+         <item>yes</item>
+         <item>no</item>
+      
+   </vocabList>
+
+   <!-- 6.2 Copyright and Other Restrictions -->
+   <vocabList name="copyrightAndOtherRestrictionsValues"><item></item>
+      
+         <item>yes</item>
+         <item>no</item>
+      
+   </vocabList>
+
+   <!-- 7.1 Kind -->
+   <vocabList name="kindValues"><item></item>
+      
+         <item>ispartof</item>
+         <item>haspart</item>
+         <item>isversionof</item>
+         <item>hasversion</item>
+         <item>isformatof</item>
+         <item>hasformat</item>
+         <item>references</item>
+         <item>isreferencedby</item>
+         <item>isbasedon</item>
+         <item>isbasisfor</item>
+         <item>requires</item>
+         <item>isrequiredby</item>
+      
+   </vocabList>
+
+   <!-- 9.1 Purpose -->
+   <vocabList name="purposeValues"><item></item>
+      
+         <item>discipline</item>
+         <item>idea</item>
+         <item>prerequisite</item>
+         <item>educational objective</item>
+         <item>accessibility restrictions</item>
+         <item>educational level</item>
+         <item>skill level</item>
+         <item>security level</item>
+         <item>competency</item>
+      
+   </vocabList>
+
+   <vocabList name="lang2"><item></item>
+
+    <item>aa Afar</item>
+    <item>ab Abkhazian</item>
+    <item>af Afrikaans</item>
+    <item>am Amharic</item>
+    <item>ar Arabic</item>
+    <item>as Assamese</item>
+    <item>ay Aymara</item>
+    <item>az Azerbaijani</item>
+    <item></item>
+    <item>ba Bashkir</item>
+    <item>be Byelorussian</item>
+    <item>bg Bulgarian</item>
+    <item>bh Bihari</item>
+    <item>bi Bislama</item>
+    <item>bn Bengali; Bangla</item>
+    <item>bo Tibetan</item>
+    <item>br Breton</item>
+    <item></item>
+    <item>ca Catalan</item>
+    <item>co Corsican</item>
+    <item>cs Czech</item>
+    <item>cy Welsh</item>
+    <item></item>
+    <item>da Danish</item>
+    <item>de German</item>
+    <item>dz Bhutani</item>
+    <item></item>
+    <item>el Greek</item>
+    <item>en English</item>
+    <item>eo Esperanto</item>
+    <item>es Spanish</item>
+    <item>et Estonian</item>
+    <item>eu Basque</item>
+    <item></item>
+    <item>fa Persian</item>
+    <item>fi Finnish</item>
+    <item>fj Fiji</item>
+    <item>fo Faeroese</item>
+    <item>fr French</item>
+    <item>fy Frisian</item>
+    <item></item>
+    <item>ga Irish</item>
+    <item>gd Scots Gaelic</item>
+    <item>gl Galician</item>
+    <item>gn Guarani</item>
+    <item>gu Gujarati</item>
+    <item></item>
+    <item>ha Hausa</item>
+    <item>hi Hindi</item>
+    <item>hr Croatian</item>
+    <item>hu Hungarian</item>
+    <item>hy Armenian</item>
+    <item></item>
+    <item>ia Interlingua</item>
+    <item>ie Interlingue</item>
+    <item>ik Inupiak</item>
+    <item>in Indonesian</item>
+    <item>is Icelandic</item>
+    <item>it Italian</item>
+    <item>iw Hebrew</item>
+    <item></item>
+    <item>ja Japanese</item>
+    <item>ji Yiddish</item>
+    <item>jw Javanese</item>
+    <item></item>
+    <item>ka Georgian</item>
+    <item>kk Kazakh</item>
+    <item>kl Greenlandic</item>
+    <item>km Cambodian</item>
+    <item>kn Kannada</item>
+    <item>ko Korean</item>
+    <item>ks Kashmiri</item>
+    <item>ku Kurdish</item>
+    <item>ky Kirghiz</item>
+    <item></item>
+    <item>la Latin</item>
+    <item>ln Lingala</item>
+    <item>lo Laothian</item>
+    <item>lt Lithuanian</item>
+    <item>lv Latvian, Lettish</item>
+    <item></item>
+    <item>mg Malagasy</item>
+    <item>mi Maori</item>
+    <item>mk Macedonian</item>
+    <item>ml Malayalam</item>
+    <item>mn Mongolian</item>
+    <item>mo Moldavian</item>
+    <item>mr Marathi</item>
+    <item>ms Malay</item>
+    <item>mt Maltese</item>
+    <item>my Burmese</item>
+    <item></item>
+    <item>na Nauru</item>
+    <item>ne Nepali</item>
+    <item>nl Dutch</item>
+    <item>no Norwegian</item>
+    <item></item>
+    <item>oc Occitan</item>
+    <item>om (Afan) Oromo</item>
+    <item>or Oriya</item>
+    <item></item>
+    <item>pa Punjabi</item>
+    <item>pl Polish</item>    
+    <item>ps Pashto, Pushto</item>
+    <item>pt Portuguese</item>
+    <item></item>
+    <item>qu Quechua</item>
+    <item></item>
+    <item>rm Rhaeto-Romance</item>
+    <item>rn Kirundi</item>
+    <item>ro Romanian</item>
+    <item>ru Russian</item>
+    <item>rw Kinyarwanda</item>
+    <item></item>
+    <item>sa Sanskrit</item>
+    <item>sd Sindhi</item>
+    <item>sg Sangro</item>
+    <item>sh Serbo-Croatian</item>
+    <item>si Singhalese</item>
+    <item>sk Slovak</item>
+    <item>sl Slovenian</item>
+    <item>sm Samoan</item>
+    <item>sn Shona</item>
+    <item>so Somali</item>
+    <item>sq Albanian</item>
+    <item>sr Serbian</item>
+    <item>ss Siswati</item>
+    <item>st Sesotho</item>
+    <item>su Sudanese</item>
+    <item>sv Swedish</item>
+    <item>sw Swahili</item>
+    <item></item>
+    <item>ta Tamil</item>
+    <item></item>
+    <item>te Telugu</item>
+    <item>tg Tajik</item>
+    <item>th Thai</item>
+    <item>ti Tigrinya</item>
+    <item>tk Turkmen</item>
+    <item>tl Tagalog</item>
+    <item>tn Setswana</item>
+    <item>to Tonga</item>
+    <item>tr Turkish</item>
+    <item>ts Tsonga</item>
+    <item>tt Tatar</item>
+    <item>tw Twi</item>
+    <item></item>
+    <item>uk Ukrainian</item>
+    <item>ur Urdu</item>
+    <item>uz Uzbek</item>
+    <item></item>
+    <item>vi Vietnamese</item>
+    <item>vo Volapuk</item>
+    <item></item>
+    <item>wo Wolof</item>
+    <item></item>
+    <item>xh Xhosa</item>
+    <item></item>
+    <item>yo Yoruba</item>
+    <item></item>
+    <item>zh Chinese</item>
+    <item>zu Zulu</item>
+ 
+   </vocabList>
+</vocab>

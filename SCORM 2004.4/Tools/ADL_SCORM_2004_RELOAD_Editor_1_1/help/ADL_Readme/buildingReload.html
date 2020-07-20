@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- not strict due to the target="_blank" attribute in the <a> tag -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>ADL SCORM 2004 RELOAD Editor Version 1.1 Readme</title>
+		<link rel="stylesheet" href="README.css" type="text/css" />
+	</head>
+
+	<body class="bg">
+
+		<p>
+			<a name="buildingReload"></a>
+		</p>
+
+		<h5 class="title">
+			Building RELOAD
+		</h5>
+
+		<p>
+			<strong> <strong>Note:</strong> You are not a required to
+				build RELOAD before using it. It will install as a fully
+				operational unit. You only have to build RELOAD if
+				the source code has been changed. </strong>
+		</p>
+		<p>
+			<em>Complete the installation
+				instructions before compiling RELOAD.</em> 
+		</p>
+		<p>
+			Apache Ant must be installed before building the RELOAD.</b>  For information 
+			about and downloads of Ant, refer to
+			<a href="http://ant.apache.org/" target="_blank">http://ant.apache.org/</a>.
+			<br />
+			<em> To build RELOAD: </em>
+		</p>
+
+
+		<ol>
+			<li>
+				Open a command prompt and navigate to the directory where the RELOAD is 
+				installed (Ex: C:\ADL\ADL_SCORM_2004_RELOAD)
+			</li>
+			<li>
+				Navigate to the src\make directory
+			</li>
+			<li>
+				At the prompt type &quot;ant&quot; -buildfile ant-build.xml.
+			</li>
+		</ol>
+
+		<p>
+			The XML Ant build files will compile all Java class and jar files
+			needed by RELOAD. In addition the files will be installed to
+			apache-tomcat. (
+			<strong>Note:</strong> Restart the Tomcat server for changes to take effect. 
+			This completes the compilation of the SRTE.
+		</p>
+
+		<p>
+			<em>Source File Locations</em>
+		</p>
+		<ul>
+			<li>
+				All source files are located at
+				&lt;drive&gt;:\&lt;install_directory&gt;\src.
+			</li>
+
+		</ul>
+
+
+	</body>
+</html>

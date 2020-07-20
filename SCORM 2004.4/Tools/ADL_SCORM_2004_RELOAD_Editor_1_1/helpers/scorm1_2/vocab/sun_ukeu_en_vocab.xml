@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Schema Vocabulary Helper File v1.0 -->
+<vocab name="SUN_UKEU" lang="en">
+
+  <!-- Paths take order of precedence. Therefore the ordering of this list is important -->
+  <!-- Paths nearer the start of the list take precedence; start with the longest path and end with the shortest path -->
+  <!-- For example, "source/langstring@xml:lang" will resolve before "langstring@xml:lang" -->
+
+  <element path="schema" list="schemaList"/>
+  <element path="schemaversion" list="schemaversionList"/>
+  <element path="item@isvisible" list="itemList"/>
+  <element path="resource@type" list="typeList"/>
+  <element path="file@href" list="hrefList"/>
+  <element path="adlcp:prerequisites@type" list="prerequisitestypeList"/>
+  <element path="resource@adlcp:scormtype" list="scormtypeList"/>
+
+  <vocabList name="schemaList">
+    <item default="true">ADL SCORM</item>
+  </vocabList>
+
+  <vocabList name="schemaversionList">
+    <item default="true">1.2</item>
+  </vocabList>
+
+  <vocabList name="hrefList">
+    <item default="true">NULL</item>
+  </vocabList>
+
+  <vocabList name="itemList">
+    <item default="true">true</item>
+    <item>false</item>
+  </vocabList>
+
+  <vocabList name="typeList">
+    <item>assessment_auto</item>
+    <item>assessment_auto_formative</item>
+    <item>assessment_collab</item>
+    <item>assessment_discussion</item>
+    <item>assessment_doc</item>
+    <item>assessment_questionnaire</item>
+    <item>assessment_web</item>
+    <item>complex</item>
+    <item>discussion</item>
+    <item>module</item>
+    <item>unit</item>
+    <item default="true">webcontent</item>
+  </vocabList>
+
+  <vocabList name="prerequisitestypeList">
+    <item default="true">aicc_script</item>
+  </vocabList>
+
+  <vocabList name="scormtypeList">
+    <item default="true">asset</item>
+  </vocabList>
+
+</vocab>

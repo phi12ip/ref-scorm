@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RELOAD Metadata Profile -->
+<!-- This is the default Profile - it is not complete! -->
+<profile name="Healthcare LOM" vocabfile="lom_en_vocab.xml" schemahelperfile="lom_en_helper.xml">
+
+
+  <group name="General">
+    <element name="Language" path="lom/general/language"/>
+    <element name="Title" path="lom/general/title/string"/>
+    <element name="Description" path="lom/general/description/string"/>
+    <group name="Identifier">
+      <element name="Globally Unique Identifier" path="lom/general/identifier/entry"/>
+      <element name="Cataloging Scheme (such as 'URI', 'URN', 'DOI', 'ISBN', or 'ISSN')" path="lom/general/identifier/catalog"/>
+    </group>
+    <element name="Keywords (separated by semicolon)" path="lom/general/keyword/string"/>
+  </group>
+
+  <group name="Life Cycle">
+    <element name="Version" path="lom/lifeCycle/version/string"/>
+    <group name="Status">
+      <element name="Source" path="lom/lifeCycle/status/source"/>
+      <element name="Value" path="lom/lifeCycle/status/value"/>
+    </group>
+    <group name="Contribution">
+        <group name="Role">
+	  <element name="Source" path="lom/lifeCycle/contribute/role/source"/>
+	  <element name="Value" path="lom/lifeCycle/contribute/role/value"/>
+        </group>
+	<element name="Entity" path="lom/lifeCycle/contribute/entity"/>
+	<group name="Date">
+		<element name="Date Time" path="lom/lifeCycle/contribute/date/dateTime"/>
+		<element name="Description" path="lom/lifeCycle/contribute/date/description/string"/>
+	</group>
+    </group>
+   </group>
+
+  <group name="Healthcare Education">
+    <element name="Expiration Date" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:expirationDate"/>
+    <element name="Contact" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:contact"/> 
+    <group name="Target Audience">
+		<element name="Audience Category" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:targetAudience/hx:audienceCategory"/>
+		<element name="Profession" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:targetAudience/hx:profession"/>
+		<element name="Specialty" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:targetAudience/hx:specialty"/>
+		<element name="Reading Level" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:targetAudience/hx:readingLevel"/>
+    </group>
+    <group name="Activity Location">
+		<element name="Street Address" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:StreetAddressLine"/>
+		<element name="City" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:City"/>
+		<element name="State Or Province" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:StateOrProvince"/>
+		<element name="room" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:room"/>
+		<element name="building" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:building"/>
+		<group name="Country">
+			<element name="Country Code" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activityLocation/a:Country/a:CountryCode"/>
+		</group>
+    </group>	
+	<element name="Start Date Time" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:startDateTime"/>
+	<element name="End Date Time" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:endDateTime"/>
+	<element name="Participation Modality" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:participationModality"/>
+  </group>
+
+  <group name="Educational">
+     <group name="Context">
+    	<element name="Source" path="lom/educational/context/source"/>
+    	<element name="Value" path="lom/educational/context/value"/>
+     </group> 
+  </group>
+
+  <group name="Rights">
+    <group name="Cost">
+    	<element name="Source" path="lom/rights/cost/source"/>
+    	<element name="Value" path="lom/rights/cost/value"/>
+    </group>
+    <group name="Copyright and Other Restrictions">
+    	<element name="Source" path="lom/rights/copyrightAndOtherRestrictions/source"/>
+    	<element name="Value" path="lom/rights/copyrightAndOtherRestrictions/value"/>
+    </group>
+    <element name="Description" path="lom/rights/description/string"/>
+  </group>
+
+  <group name="Classification">
+    <group name="Purpose">
+    	<element name="Source" path="lom/classification/purpose/source"/>
+    	<element name="Value" path="lom/classification/purpose/value"/>
+    </group>
+    <group name="Taxon Path">
+      <element name="Source" path="lom/classification/taxonPath/source/string"/>
+      <group name="Taxon">
+        <element name="ID" path="lom/classification/taxonPath/taxon/id"/>
+        <element name="Entry" path="lom/classification/taxonPath/taxon/entry/string"/>
+      </group>
+    </group>
+    <element name="Description" path="lom/classification/description/string"/>
+    <element name="Keyword" path="lom/classification/keyword/string"/>
+  </group>
+  
+  <group name="Healthcare Education">
+    <group name="Credits" >		
+		<element name="accreditingBody" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:accreditingBody"/>	
+		<element name="activityCertification" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:activityCertification"/>	
+		<element name="creditType" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:creditType"/>	
+		<element name="creditUnit" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:creditUnit"/>	
+		<element name="accreditedProvider" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:accreditedProvider"/>	
+		<element name="releaseDate" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:releaseDate"/>	
+		<element name="expirationDate" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:expirationDate"/>	
+		<element name="numberOfCredits" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:credits/hx:numberOfCredits"/>			
+	</group>
+	<element name="activitySponsorship" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:activitySponsorship"/>
+    <element name="Commercial Support" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:commercialSupport"/>
+    <element name="Commercial Support Acknowledgement" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:commercialSupportAcknowledgement"/>
+    <element name="Provider Relationship" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:providerRelationship"/>
+    <element name="Provider Relationship Disclosure" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:providerRelationshipDisclosure"/>
+    <element name="Faculty Relationship" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:facultyRelationship"/>
+    <element name="Faculty Relationship Disclosure" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:facultyRelationshipDisclosure"/>
+    <element name="Off Label Use" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:offLabelUse"/>
+    <element name="Off Label Description" path="lom/hx:healthcareMetadata/hx:healthcareEducation/hx:offLabelDescription"/>
+  </group>
+
+  <group name="Meta-metadata">
+    <group name="Identifier">
+	<element name="Globally Unique Identifier" path="lom/metaMetadata/identifier/entry"/>
+    </group>
+    <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema1"/>
+    <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema2"/>
+    <element name="Metadata Schema" path="lom/metaMetadata/metadataSchema"/>
+    <element name="Language" path="lom/metaMetadata/language"/> 
+  </group>
+	
+  <group name="Technical">
+    <element name="Format" path="lom/technical/format"/>
+  </group>
+
+
+
+ 
+</profile>

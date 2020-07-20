@@ -1,0 +1,124 @@
+h1 {
+	font:bold 150% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	padding: .2em 0em .4em 0em;
+	margin:0em 0em 0em 0em;
+	text-decoration:none;
+}
+
+h2 {
+	font:bold 110% Arial, Helvetica, San Serif;
+	text-decoration:none;
+	margin:0em 0em .3em 0em;
+	padding: 0em 0em .1em 0em;
+}
+
+
+body {
+	padding:0em 4em 1em 1em;
+}
+
+p {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	padding:0em 0em 0em 0em;
+	margin:0em 0em 1em 0em;
+	text-decoration:none;
+}
+
+p.tight {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	padding:0em 0em 0em 0em;
+	margin:0em 0em .5em 0em;
+	text-decoration:none;
+}
+
+ul, ol {
+	margin:0em 0em .5em 0em;
+	padding:0em 0em .1em 2em;
+	text-decoration:none;
+}
+
+li {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1em;
+	padding:0em 0em .5em 0em;
+	text-decoration:none;
+}
+
+li.spaced {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	padding:0em 0em 1.5em 0em;
+	text-decoration:none;
+}
+
+.caption {
+	font:oblique 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	padding:0em 0em 0em 0em;
+	margin:.2em 0em .5em 0em;
+	text-decoration:none;
+}
+
+.text {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	text-decoration:none;
+}
+
+.footer {
+	font:normal 80% Arial, Helvetica, San Serif;
+	padding:0em 0em 0em 0em;
+	margin:.2em 0em 1em 0em;
+	text-decoration:none;
+}
+
+hr.footer {
+	margin:3em 0em 1em 0em;
+	width:100%;
+	color:#000000;
+}
+
+div.navigation {
+	font:normal 80% Arial, Helvetica, San Serif;
+	padding:1.5em 0em 0em 0em;
+	text-decoration:none;
+}
+
+.answers {
+	padding:.5em 0em 2em 2em;
+	margin:0em 0em 0em 0em;
+	font:normal 80% Arial, Helvetica, San Serif;
+	text-decoration:none;
+}
+
+.answers-picture {
+	font:normal 80% Arial, Helvetica, San Serif;
+	padding:0em 0em 1em 0em;
+	margin:0em 0em 0em 0em;
+	text-decoration:none;
+}
+
+table.choices {
+	padding:.5em 0em 1em 0em;
+	margin:0em 0em 0em 0em;
+}
+
+.question {
+	margin:.1em 0em .1em 0em;
+	padding:0em 0em 0em 0em;
+}
+
+.text-left {
+	font:normal 90% Arial, Helvetica, San Serif;
+	line-height:1.2em;
+	text-decoration:none;
+	padding:0em 3em 0em 0em;
+}
+
+.navigation a {
+	font:normal 80% Arial, Helvetica, San Serif;
+	color:#ff0000;
+}

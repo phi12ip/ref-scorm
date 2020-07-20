@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+	<!-- RELOAD Schema Helper File v1.2 -->
+<schemahelper schema="SCORM 1.3">
+
+	<!--
+		Paths take order of precedence. Therefore the ordering of this list is
+		important
+	-->
+	<!--
+		Paths nearer the start of the list take precedence; start with the
+		longest path and end with the shortest path
+	-->
+	<!--
+		For example, "source/langstring@xml:lang" will resolve before
+		"langstring@xml:lang"
+	-->
+
+	<!-- Elements -->
+	<element path="dependency" fname="Dependency">
+		<tip><![CDATA[Identifies a resource whose files this resource depends upon.]]>
+		</tip>
+	</element>
+	<element path="file" fname="File">
+		<tip><![CDATA[A listing of files that this resource is dependent on.]]>
+		</tip>
+	</element>
+	<element path="item" fname="Item">
+		<tip><![CDATA[A node that describes the shape of the organization. It can reference a Resource or sub-Manifest.
+         You can do this from the drop-down box.]]>
+		</tip>
+	</element>	
+	<element path="manifest" fname="Manifest">
+		<tip><![CDATA[The <b>Manifest</b> node of the Content Package contains all child elements
+         and other sub-Manifests.<p><p>A reusable unit of instruction. Encapsulates meta-data, organizations, and resource references.]]>
+		</tip>
+	</element>
+	<element path="metadata" fname="Metadata">
+		<tip><![CDATA[This element contains context specific meta-data that is used to describe the content of the overall package
+        (Package level meta-data).  If meta-data is provided, the meta-data must be valid IMS Learning Resource Meta-data.
+        <br><br>You can edit the Metadata from the Edit menu or by clicking on the button on the toolbar.]]>
+		</tip>
+	</element>
+	<element path="data" fname="Data">
+		<tip><![CDATA[A node that describes the shape of the organization. It can reference a Resource or sub-Manifest.
+         You can do this from the drop-down box.]]>
+		</tip>
+	</element>
+	<element path="sequencingCollection" fname="Sequencing Collection">
+		<tip><![CDATA[A node that describes the shape of the organization. It can reference a Resource or sub-Manifest.
+         You can do this from the drop-down box.]]>
+		</tip>
+	</element>	
+	<element path="map" fname="Map">
+		<tip><![CDATA[A node that describes the shape of the organization. It can reference a Resource or sub-Manifest.
+         You can do this from the drop-down box.]]>
+		</tip>
+	</element>	
+	<element path="organization" fname="Organization">
+		<tip><![CDATA[This element describes a particular organization.  Different views or organizational paths through
+        the content can be described using multiple instances of the Organization element.]]>
+		</tip>
+	</element>
+	<element path="organizations" fname="Organizations">
+		<tip><![CDATA[Describes one or more structures or organizations for this package.
+        When defining a SCORM Resource Package, this element is required to be empty.
+        When defining a SCORM Content Aggregation Package, this element is required to contain at least one organization sub-element.]]>
+		</tip>
+	</element>
+	<element path="resource" fname="Resource">
+		<tip><![CDATA[A reference to a resource.]]>
+		</tip>
+	</element>
+	<element path="resources" fname="Resources">
+		<tip><![CDATA[A collection of references to resources. There is no assumption of order or hierarchy.]]>
+		</tip>
+	</element>
+	<element path="schema" fname="Schema">
+		<tip><![CDATA[Describes the schema that defines the meta-data.
+        This element is optional, however if present it must contain the value of “ADL SCORM”.]]>
+		</tip>
+	</element>
+	<element path="schemaversion" fname="Schema Version">
+		<tip><![CDATA[Describes the version of the schema that defines the meta-data.
+        This element is optional, however if present it must contain the value of “2004 4th Edition”.]]>
+		</tip>
+	</element>
+	<element path="title" fname="Title">
+		<tip><![CDATA[Describes the title of the organization or item.]]></tip>
+	</element>
+	<element path="adlcp:location" fname="Location">
+		<tip><![CDATA[This element describes the location where the meta-data describing the package may be found.
+        This may be a Universal Resource Indicator (URI).<br><br>
+        ADL Note: This is an ADL extension to the IMS Content Packaging Information Model.
+        This element can be used to reference a file that contains the meta-data.
+        Either the meta-data is included in-line within the metadata element,
+        or this element is used to provide the file location.]]>
+		</tip>
+		<widget>filechooser</widget>
+	</element>
+	<element path="adlcp:timeLimitAction" fname="Time Limit Action">
+		<tip><![CDATA[This element defines the action that should be taken when the max time allowed in the current attempt
+       of the SCO represented by the item is exceeded.]]>
+		</tip>
+	</element>
+	<element path="adlcp:dataFromLMS" fname="Data from LMS">
+		<tip><![CDATA[This element provides a place for initialization data expected by the SCO represented by the item after launch.
+        This data is unconstrained and undefined.  Usage of this element is not yet well defined and should be used with caution.]]>
+		</tip>
+	</element>
+	<element path="adlcp:completionThreshold" fname="Completion Threshold">
+		<tip><![CDATA[This element holds a value against which the measure of the progress the learner has made toward completing the SCO can be compared to determine whether the SCO should be considered completed.]]>
+		</tip>
+	</element>
+	<element path="adlnav:presentation" fname="Presentation">
+		<tip><![CDATA[This element is a container element that encapsulates presentaion information for a given learning activity.]]>
+		</tip>
+	</element>
+	<element path="navigationInterface" fname="Navigation Interface">
+		<tip><![CDATA[This element is a container element that encapsulates navigation interface presentaion requirements for a given learning activity.]]>
+		</tip>
+	</element>
+	<element path="hideLMSUI" fname="Hide LMSUI">
+		<tip><![CDATA[This element indicates that the LMS should not provide user interface devices that enable the learner to trigger specific events.]]>
+		</tip>
+	</element>
+
+	<!--Simple Sequencing Elements-->
+	<element path="sequencing" fname="Sequencing">
+		<tip><![CDATA[This is the container for the sequencing rules applied to an activity. It must be included before specific sequencing rules may be included.]]>
+		</tip>
+	</element>
+	<element path="sequencingRules" fname="Sequencing Rules">
+		<tip><![CDATA[Each sequencing rule describes the sequencing behavior for an activity. Each activity may have an unlimited number of sequencing rules and within any grouping
+		the rules are evaluated in the order in which they are listed.]]>
+		</tip>
+	</element>
+	<element path="limitConditions" fname="Limit Conditions">
+		<tip><![CDATA[Limit conditions define constraints on the access to an activity based on time of day, time spent on the activity and number of attempts.]]>
+		</tip>
+	</element>
+	<element path="auxiliaryResources" fname="Auxiliary Resources">
+		<tip><![CDATA[When an activity is delivered to the learner, the auxiliary resources are also made available to the learner. Auxiliary resources are optional. ]]>
+		</tip>
+	</element>
+	<element path="randomizationControls" fname="Randomization Controls">
+		<tip><![CDATA[Randomization controls describe how children of an activity should be ordered during the sequence process.]]>
+		</tip>
+	</element>
+	<element path="deliveryControls" fname="Delivery Controls">
+		<tip><![CDATA[Delivery Controls describe the action and controls used when an acitivity is delivered. ]]>
+		</tip>
+	</element>
+	<element path="ruleAction" fname="Rule Action">
+		<tip><![CDATA[The action to be taken if the sequencing rule evaluates to 'True'.]]>
+		</tip>
+	</element>
+	<element path="ruleConditions" fname="Rule Conditions">
+		<tip><![CDATA[The conditions that are to be applied to either the pre-, post-, or exit condition rules.]]>
+		</tip>
+	</element>
+	<element path="ruleCondition" fname="Rule Condition">
+		<tip><![CDATA[The condition to be applied to either the pre-, post-, or exit condition rules.]]>
+		</tip>
+	</element>
+	<element path="auxiliaryResource" fname="Auxiliary Resource">
+		<tip><![CDATA[Information describing a single auxiliary resource.]]>
+		</tip>
+	</element>
+	<element path="rollupRule" fname="Rollup Rule">
+		<tip><![CDATA[A rollup rule contains the conditions and action for the rule-based rollup behavior.]]>
+		</tip>
+	</element>
+	<element path="rollupAction" fname="Rollup Action">
+		<tip><![CDATA[The action to be taken if the rollup rule evaluates to 'True'.]]>
+		</tip>
+	</element>
+	<element path="rollupCondition" fname="Rollup Condition">
+		<tip><![CDATA[Identification of a condition to be applied in the rollup rule.]]>
+		</tip>
+	</element>
+	<element path="rollupConditions" fname="Rollup Conditions">
+		<tip><![CDATA[The set of conditions that are applied within a single rollup rule.]]>
+		</tip>
+	</element>
+	<element path="primaryObjective" fname="Primary Objective">
+		<tip><![CDATA[Identifies the objective that contributes to the rollup associated with an activity.]]>
+		</tip>
+	</element>
+	<element path="objective" fname="Objective">
+		<tip><![CDATA[Identifies objectives that do not contribute to rollup associated with the activity.]]>
+		</tip>
+	</element>
+	<element path="minNormalizedMeasure" fname="Minimum Normalized Measure">
+		<tip><![CDATA[Defines the minimum satisfaction measure for the objective normalized between -1 and 1.]]>
+		</tip>
+	</element>
+	<element path="mapInfo" fname="Map Information">
+		<tip><![CDATA[This defines that mapping of an activity's local objective information to and from a shared global objective.]]>
+		</tip>
+	</element>
+	<element path="constrainedChoiceConsiderations" fname="Constrained Choice Considerations">
+		<tip><![CDATA[The adlseq:constrainedChoiceConsiderations element is the container for the descriptions of how choice navigation requests should be constrained during the sequencing process.  The constrained choice only applies to the activity for which it is defined.]]>
+		</tip>
+	</element>
+	<element path="rollupConsiderations" fname="Rollup Considerations">
+		<tip><![CDATA[The adlseq:rollupConsiderations element is the container for the descriptions of when an activity should be included in the rollup process.]]>
+		</tip>
+	</element>
+
+	<element path="rollupRules" fname="Rollup Rules">
+		<tip><![CDATA[Rollup rule description specifies the details of individual rule-based rollup behaviors for an activity.
+		Rollup rules describe how values of the child activities influence the Objective Progress Information and Activity/Attempt
+		Progress Information for an activity.]]>
+		</tip>
+	</element>
+	<element path="preConditionRule" fname="PreCondition Rules">
+		<tip><![CDATA[A PreCondition ule is evaluated before an activity is delivered and determines whether the activity is presented to the user.]]>
+		</tip>
+	</element>
+	<element path="postConditionRule" fname="PostCondition Rules">
+		<tip><![CDATA[The PostCondition rule contain the description of actions that control sequencing flow by issuing sequencing requests. Rules that include
+		such actions are applied when an activity exits.]]>
+		</tip>
+	</element>
+	<element path="exitConditionRule" fname="ExitCondition Rules">
+		<tip><![CDATA[The ExitCondition rule contains the description of actions that terminate an activity. Rules that include 
+		such actions are applied when a descendent of an activity exits.]]>
+		</tip>
+	</element>
+	<element path="controlMode" fname="Control Mode">
+		<tip><![CDATA[Control Mode contains the sequencing control mode information including descriptions of the types of sequencing behaviors specified for an
+		activity. Simple Sequencing processes may reference the sequencing control modes for any activity in the activity tree and the default values
+		are used if the data is not defined for a given activity. ]]>
+		</tip>
+	</element>
+	<element path="objectives" fname="Objectives">
+		<tip><![CDATA[Objectives contains the set of objectives that are to be associated with an activity. Each activity must have at least one primary
+		objective and may have an unlimited number of objectives.]]>
+		</tip>
+	</element>
+
+	<!-- Attributes -->
+	<element path="@identifier" fname="Identifier">
+		<tip>An identifier that is unique within the Manifest.</tip>
+	</element>
+	<element path="@version" fname="Version">
+		<tip>Identifies the version of this Manifest (e.g., 1.0).
+		</tip>
+	</element>
+	<element path="@default" fname="Default Organization">
+		<tip>Indicates which organization scheme is the default one.
+		</tip>
+	</element>
+	<element path="@structure" fname="Structure">
+		<tip>Has a default value of “hierarchical” for describing the shape
+			of an organization.</tip>
+	</element>
+	<element path="@href" fname="HREF">
+		<tip>A reference to a URL.</tip>
+	</element>
+	<element path="@identifierref" fname="Referenced element">
+		<tip>A reference to an resource in the resources section or a
+			(sub)Manifest.</tip>
+	</element>
+	<element path="@isvisible" fname="Is Visible">
+		<tip>Indicates whether or not this item is displayed when the
+			structure of the Package is displayed or rendered.</tip>
+	</element>
+	<element path="@parameters" fname="Parameters">
+		<tip>Static parameters to be passed to the resource at launch
+			time.</tip>
+	</element>
+	<element path="resource@type" fname="Type">
+		<tip>Indicates the type of resource.</tip>
+	</element>
+	<element path="@xml:base" fname="Base">
+		<tip>Provides the relative path offset for the content
+			file(s).</tip>
+	</element>
+	<element path="@adlcp:scormtype" fname="SCORM Type">
+		<tip>Indicates the type of resource. This can be SCO or asset
+		</tip>
+	</element>
+
+</schemahelper>
